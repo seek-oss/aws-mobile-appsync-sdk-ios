@@ -22,8 +22,9 @@ let package = Package(
             from: "1.8.0"
         ),
         .package(
+            name: "SQLite.swift",
             url: "https://github.com/stephencelis/SQLite.swift.git",
-            from: "0.12.0"
+            .upToNextMinor(from: "0.12.0")
         ),
         .package(
             name: "Reachability",
